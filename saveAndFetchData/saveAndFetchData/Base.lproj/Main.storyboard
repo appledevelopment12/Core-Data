@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="saveAndFetchData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children  Database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-Oa-Qtp">
+                                <rect key="frame" x="58" y="76" width="253" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="HRL-oE-OtG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entere Children" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-Ye-J1w">
+                                <rect key="frame" x="42" y="117" width="321" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-Hj-P7Y">
+                                <rect key="frame" x="111" y="183" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MMr-ja-c90"/>
+                                    <constraint firstAttribute="width" constant="130" id="NMP-eA-pMl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="addNewChildren:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4g-14-xBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2A-Zm-mJh">
+                                <rect key="frame" x="58" y="248" width="253" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="JJz-s1-d2J"/>
+                                    <constraint firstAttribute="height" constant="35" id="i07-94-CjK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here To Fetch All Data"/>
+                                <connections>
+                                    <action selector="fetchClickData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWd-fI-KXH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iJw-Hj-P7Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="03J-nh-zte"/>
+                            <constraint firstItem="iJw-Hj-P7Y" firstAttribute="top" secondItem="nZQ-Ye-J1w" secondAttribute="bottom" constant="32" id="3F5-dX-Zqa"/>
+                            <constraint firstItem="wLc-Oa-Qtp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="5Id-Ci-7jE"/>
+                            <constraint firstItem="nZQ-Ye-J1w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="6JG-AU-rAK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iJw-Hj-P7Y" secondAttribute="trailing" constant="152" id="BEM-fk-6pt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wLc-Oa-Qtp" secondAttribute="trailing" constant="82" id="G8g-VO-HeO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C2A-Zm-mJh" secondAttribute="bottom" constant="535" id="Hwb-UI-BGS"/>
+                            <constraint firstItem="C2A-Zm-mJh" firstAttribute="top" secondItem="iJw-Hj-P7Y" secondAttribute="bottom" constant="30" id="Ohj-oo-htl"/>
+                            <constraint firstItem="C2A-Zm-mJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Slb-LA-EYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2A-Zm-mJh" secondAttribute="trailing" constant="82" id="bAp-Ct-f9V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nZQ-Ye-J1w" secondAttribute="trailing" constant="30" id="mX4-gA-73n"/>
+                            <constraint firstItem="nZQ-Ye-J1w" firstAttribute="top" secondItem="wLc-Oa-Qtp" secondAttribute="bottom" id="wti-NW-ABw"/>
+                            <constraint firstItem="wLc-Oa-Qtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="ywy-i4-VWk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myText" destination="nZQ-Ye-J1w" id="qfo-Ns-kk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+</document>
